@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Crypto Price Comparison</h1>
+    <div class="filter-container">
+      <label for="filterInput">Filter by Cryptocurrency:</label>
+      <input
+        type="text"
+        id="filterInput"
+        oninput="filterTable()"
+        placeholder="Enter cryptocurrency symbol..."
+      />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Cryptocurrency</th>
+          <th onclick="sortTable(1)">Bybit Price</th>
+          <th onclick="sortTable(2)">Binance Price</th>
+          <th onclick="sortTable(3)">Difference</th>
+          <th onclick="sortTable(4)">Difference (%)</th>
+        </tr>
+      </thead>
+      <tbody id="cryptoTableBody">
+        <!-- Table rows will be appended here dynamically -->
+      </tbody>
+    </table>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

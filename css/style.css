@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.positive {
+  background-color: #d4edda;
+}
+.negative {
+  background-color: #f8d7da;
+}
+.filter-container {
+  margin-bottom: 20px;
+}
