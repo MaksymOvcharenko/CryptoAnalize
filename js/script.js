@@ -47,7 +47,7 @@
 // Functions to fetch data from Bybit and Binance
 function bybitPrice() {
   const BASE_URL = "https://bybit4.p.rapidapi.com";
-  const END_POINT = "/spot/v3/public/quote/ticker/price";
+  const END_POINT = "/spot/v3/public/quote/ticker/24hr";
 
   const url = `${BASE_URL}${END_POINT}`;
 
@@ -60,8 +60,8 @@ function bybitPrice() {
     .then((res) => res.json())
     .then((data) => {
       return data.result.list.map((item) => ({
-        symbol: item.symbol,
-        price: parseFloat(item.price),
+        symbol: item.s,
+        price: parseFloat(item.lp),
       }));
     });
 }
