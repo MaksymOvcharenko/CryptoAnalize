@@ -7,14 +7,14 @@
 //   const url = `${BASE_URL}${END_POINT}?${params}`;
 
 //   const headers = {
-//     "X-RapidAPI-Key": "405e9dd42amsh4b9cf30a1be6e71p1d8fd0jsn8aa2c4497af1",
+//     "X-RapidAPI-Key": "8fed956945msh51d417cdf5166c4p178a36jsnccf3abaeaf98",
 //     "X-RapidAPI-Host": "bybit4.p.rapidapi.com",
 //   };
 
 //   return fetch(url, { headers })
 //     .then((res) => res.json())
 //     .then((data) => {
-//       return data.result.list;
+//       return console.log(data.result.list);
 //     });
 // }
 
@@ -27,18 +27,19 @@
 //   const url = `${BASE_URL}${END_POINT}?${params}`;
 
 //   const headers = {
-//     "X-RapidAPI-Key": "9b3ff61931msh1b42d77d34e33dap1c29cajsn3d3169e0e2f4",
+//     "X-RapidAPI-Key": "8fed956945msh51d417cdf5166c4p178a36jsnccf3abaeaf98",
 //     "X-RapidAPI-Host": "binance43.p.rapidapi.com",
 //   };
 
 //   return fetch(url, { headers })
 //     .then((res) => res.json())
 //     .then((data) => {
-//       return data;
+//       return console.log(data);
 //     });
 // }
 // binancePrice();
 // bybitPrice();
+// Functions to fetch data from Bybit and Binance
 // Functions to fetch data from Bybit and Binance
 // Functions to fetch data from Bybit and Binance
 // Functions to fetch data from Bybit and Binance
@@ -51,7 +52,7 @@ function bybitPrice() {
   const url = `${BASE_URL}${END_POINT}`;
 
   const headers = {
-    "X-RapidAPI-Key": "405e9dd42amsh4b9cf30a1be6e71p1d8fd0jsn8aa2c4497af1",
+    "X-RapidAPI-Key": "8fed956945msh51d417cdf5166c4p178a36jsnccf3abaeaf98",
     "X-RapidAPI-Host": "bybit4.p.rapidapi.com",
   };
 
@@ -72,7 +73,7 @@ function binancePrice() {
   const url = `${BASE_URL}${END_POINT}`;
 
   const headers = {
-    "X-RapidAPI-Key": "9b3ff61931msh1b42d77d34e33dap1c29cajsn3d3169e0e2f4",
+    "X-RapidAPI-Key": "8fed956945msh51d417cdf5166c4p178a36jsnccf3abaeaf98",
     "X-RapidAPI-Host": "binance43.p.rapidapi.com",
   };
 
@@ -203,7 +204,7 @@ function updateTable() {
 updateTable();
 
 // Optional: Update data every 30 seconds
-setInterval(updateTable, 100000);
+setInterval(updateTable, 180000);
 
 // Make functions globally accessible
 window.sortTable = sortTable;
