@@ -203,7 +203,7 @@ function updateTable() {
 updateTable();
 
 // Optional: Update data every 30 seconds
-setInterval(updateTable, 10000);
+setInterval(updateTable, 100000);
 
 // Make functions globally accessible
 window.sortTable = sortTable;
